@@ -175,6 +175,16 @@
   }
   .hero-scroll span { width: 1px; height: 2.8rem; background: var(--copper); opacity: .5; }
 
+  /* On small screens shrink the line + tuck it lower so it doesn't kiss the CTA */
+  @media (max-width: 768px) {
+    .hero-scroll { bottom: 1.2rem; gap: .35rem; }
+    .hero-scroll span { height: 1.6rem; }
+  }
+  @media (max-width: 420px) {
+    .hero-scroll { bottom: .9rem; }
+    .hero-scroll span { height: 1.2rem; }
+  }
+
   /* ── DIVIDER ──────────────────────────────────────── */
   .divider {
     display: flex; align-items: center; gap: 1.2rem;
